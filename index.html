@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wt官方工作室</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+        body {
+            background-color: #000000;
+            padding: 40px 16px;
+            color: #fff;
+        }
+        .container {
+            max-width: 480px;
+            margin: 0 auto;
+            border: 1px solid #d4a02070;
+            border-radius: 20px;
+            padding: 30px 20px;
+            background: #080808;
+            box-shadow: 0 0 25px #ffc13b40;
+        }
+        /* 头像区域 */
+        .avatar-box {
+            text-align: center;
+            margin-bottom: 24px;
+        }
+        .avatar {
+            width: 130px;
+            height: 130px;
+            border-radius: 50%;
+            border: 3px solid #ffc840;
+            object-fit: cover;
+            background: #222;
+        }
+        /* 标题文字 */
+        .main-title {
+            font-size: 32px;
+            font-weight: bold;
+            background: linear-gradient(90deg, #4cd9ff, #ffdd33, #ff6699);
+            -webkit-background-clip: text;
+            color: transparent;
+            margin-top: 14px;
+        }
+        .sub-title {
+            color: #ddd;
+            font-size: 18px;
+            margin-top: 10px;
+            letter-spacing: 1px;
+        }
+        /* 功能卡片列表 */
+        .list-box {
+            margin-top: 32px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .item-card {
+            display: flex;
+            align-items: center;
+            background: #151515;
+            border-radius: 14px;
+            padding: 16px 12px;
+            border: 1px solid #ffbc2c60;
+        }
+        .icon-wrap {
+            width: 50px;
+            height: 50px;
+            background: linear-gradient(135deg, #e6b020, #ffd040);
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 24px;
+            color: #000;
+            margin-right: 14px;
+            flex-shrink: 0;
+        }
+        .text-area {
+            flex: 1;
+        }
+        .item-name {
+            font-size: 19px;
+            font-weight: 600;
+            color: #ffdd44;
+        }
+        .item-desc {
+            font-size: 14px;
+            color: #cccccc;
+            margin-top: 4px;
+            line-height: 1.4;
+        }
+        .gold-btn {
+            background: linear-gradient(135deg, #d89810, #ffc730);
+            color: #000;
+            border: none;
+            border-radius: 10px;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            white-space: nowrap;
+            text-decoration: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 顶部头像标题 -->
+        <div class="avatar-box">
+            <img class="avatar" alt="头像" src="https://i.ibb.co/8gYNxBw5/image-download-1759240185120.jpg">
+            <h1 class="main-title">Wt官方工作室</h1>
+            <p class="sub-title">见雪本人频道@KSWTPZ</p>
+        </div>
+
+        <!-- 功能列表 -->
+        <div class="list-box">
+            <!-- 主店铺 点击跳转目标网页 -->
+            <div class="item-card">
+                <div class="icon-wrap">🛒</div>
+                <div class="text-area">
+                    <div class="item-name">项目主链接</div>
+                    <div class="item-desc">点击访问官方链接</div>
+                </div>
+                <a href="https://new.kxtrl.cn/shop/KSWTPZ" target="_blank" class="gold-btn">转入</a>
+            </div>
+            <!-- 官方频道 -->
+            <div class="item-card">
+                <div class="icon-wrap">💬</div>
+                <div class="text-area">
+                    <div class="item-name">频道@KSWTPZ</div>
+                    <div class="item-desc">见雪唯一官方频道</div>
+                </div>
+                <button class="gold-btn">赶快加入</button>
+            </div>
+            <!-- 快手账号 -->
+            <div class="item-card">
+                <div class="icon-wrap">💬</div>
+                <div class="text-area">
+                    <div class="item-name">🐧群：1040694781</div>
+                    <div class="item-desc">见雪唯一🐧消息群</div>
+                </div>
+                <button class="gold-btn">加入谢谢</button>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
